@@ -132,52 +132,42 @@ $gutters: (xs, $grid-gutter-width-xs), (sm, $grid-gutter-width-sm), (md, $grid-g
 // Loop through the gutters and set the gutters + margins
 @each $label, $size in $gutters {
   .gutter-xs-#{$label} { padding-left: ($size / 2); padding-right: ($size / 2); }
-  .gutter-xs-#{$label}-up { padding-top: ($size / 2); padding-bottom: ($size / 2); }
-  // .gutter-margin-xs-#{$label} { margin-bottom: $size; }
+  .gutter-tb-xs-#{$label}-up { padding-top: ($size / 2); padding-bottom: ($size / 2); }
   .gutter-margin-xs-#{$label} { margin-left: ($size / 2); margin-right: ($size / 2); }
   .gutter-margin-xs-#{$label}-up { margin-top: $size; }
   .gutter-none-xs-#{$label} {margin: 0; padding: 0;}
   .gutter-margin-tb-xs-#{$label} {margin-top: $size; margin-bottom: $size;}
-  .gutter-tb-xs-#{$label} {padding-top: ($size / 2); padding-bottom: ($size / 2);}
-  
 }
 
 @media (min-width: $s) {
   @each $label, $size in $gutters {
     .gutter-sm-#{$label} { padding-left: ($size / 2); padding-right: ($size / 2); }
-    .gutter-sm-#{$label}-up { padding-top: ($size / 2); padding-bottom: ($size / 2); }
-    // .gutter-margin-sm-#{$label} { margin-bottom: $size; }
+    .gutter-tb-sm-#{$label}-up { padding-top: ($size / 2); padding-bottom: ($size / 2); }
     .gutter-margin-sm-#{$label}-up { margin-top: $size; }
     .gutter-margin-sm-#{$label} { margin-left: -($size / 2); margin-right: -($size / 2); }
     .gutter-margin-tb-sm-#{$label} {margin-top: $size; margin-bottom: $size;}
-    .gutter-none-sm-#{$label} {margin: 0; padding: 0;}
-    .gutter-tb-sm-#{$label} {padding-top: ($size / 2); padding-bottom: ($size / 2);}
-    
+    .gutter-none-sm-#{$label} {margin: 0; padding: 0;} 
   }
 }
 
 @media (min-width: $m) {
   @each $label, $size in $gutters {
     .gutter-md-#{$label} { padding-left: ($size / 2); padding-right: ($size / 2); }
-    .gutter-md-#{$label}-up { padding-top: ($size / 2); padding-bottom: ($size / 2); }
-    // .gutter-margin-md-#{$label} { margin-bottom: $size; }
+    .gutter-tb-md-#{$label}-up { padding-top: ($size / 2); padding-bottom: ($size / 2); }
     .gutter-margin-md-#{$label}-up { margin-top: $size; }
     .gutter-margin-md-#{$label} { margin-left: -($size / 2); margin-right: -($size / 2); }
     .gutter-margin-tb-md-#{$label} {margin-top: $size; margin-bottom: $size;}
     .gutter-none-md-#{$label} {margin: 0; padding: 0;}
-    .gutter-tb-md-#{$label} {padding-top: ($size / 2); padding-bottom: ($size / 2);}
   }
 }
 
 @media (min-width: $l) { 
   @each $label, $size in $gutters {
     .gutter-lg-#{$label} { padding-left: ($size / 2); padding-right: ($size / 2); }
-    .gutter-lg-#{$label}-up { padding-top: ($size / 2); padding-bottom: ($size / 2); }
-    // .gutter-margin-lg-#{$label} { margin-bottom: $size; }
+    .gutter-tb-lg-#{$label}-up { padding-top: ($size / 2); padding-bottom: ($size / 2); }
     .gutter-margin-lg-#{$label} { margin-left: -($size / 2); margin-right: -($size / 2); }
     .gutter-margin-lg-#{$label}-up { margin-top: $size; }
     .gutter-margin-tb-lg-#{$label} {margin-top: $size; margin-bottom: $size;}
     .gutter-none-lg-#{$label} {margin: 0; padding: 0;}
-    .gutter-tb-lg-#{$label} {padding-top: ($size / 2); padding-bottom: ($size / 2);}
   }
 }
