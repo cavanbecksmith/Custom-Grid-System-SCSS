@@ -1,13 +1,15 @@
 # Custom Grid SASS
 ## Sizes
 
-Label | Size |
---- | --- | 
-xxs | `0` | 
-xs | 300px |
-sm | 480px |
-md | 769px |
-lg | 1024px |
+Label | Size | $Var |
+--- | --- | --- |
+xxs | 0px | $xxs |
+xs | 300px | $xs |
+sm | 480px | $s |
+md | 769px | $m |
+lg | 1024px | $l |
+xl | 1200px | $xl |
+xxl | 1440px | $xxl |
 ## Grid
 ## Gutters
 ## Text align
